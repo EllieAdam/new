@@ -1,0 +1,369 @@
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200);
+      @import url(http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
+      @import url(http://weloveiconfonts.com/api/?family=entypo);
+
+      .hiden {
+          display: none;
+      }
+
+      * {
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          -o-box-sizing: border-box;
+          box-sizing: border-box;
+          margin: 0px;
+          padding: 0px;
+      }
+
+      html, body {
+          height: 100%;
+      }
+
+      body {
+          overflow-x: hidden;
+          width: 100%;
+      }
+
+      #wrap {
+          width: 300px;
+          transition: all .1s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+          left: -240px;
+          background: #d9d9d9;
+          height: 100%;
+          position: relative;
+      }
+
+      .div {
+          float: left;
+          height: 100%;
+      }
+
+      .left {
+          width: 80%;
+          background: #3F4047;
+      }
+
+      .right {
+          width: 20%;
+          background: #3F4047;
+      }
+
+      .wrap-3d {
+          float: left;
+      }
+
+      .icon-cont {
+          width: 100%;
+          height: 52px;
+          background: #FFFFFF;
+          border-right: 1px solid #d9d9d9;
+      }
+
+      span {
+          clear: both;
+          display: block;
+          font-size: 30pt;
+          margin-left: 14px;
+          margin-top: -4px;
+          color: #fff;
+          position: absolute;
+          text-decoration: none;
+          font-family: 'Carrois Gothic', sans-serif;
+      }
+
+      .first-block {
+          width: 100%;
+          height: 47.5%;
+          background: #3F4047;
+      }
+
+      .seccond-block {
+          width: 100%;
+          height: 47.5%;
+          background: #3F4047;
+      }
+
+      .middle {
+          position: relative;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+      }
+
+      .box-scene {
+          -webkit-perspective: 700;
+          perspective: 700;
+          width: auto;
+          height: 100%;
+          margin: auto;
+          z-index: 999;
+      }
+
+          .box-scene:hover .box {
+              -webkit-transform: rotateY(-90deg);
+              transform: rotateY(-90deg);
+          }
+
+      .box {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          -webkit-transform-style: preserve-3d;
+          -webkit-transition: all 0.4s ease-out;
+          -webkit-transform-origin: 30px 30px -30px;
+          transform-origin: 30px 30px -30px;
+          transition: all 0.4s ease-out;
+          transform-style: preserve-3d;
+      }
+
+      .face {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          -webkit-backface-visibility: visible;
+          -webkit-transform-origin: 0 0;
+      }
+
+      .front {
+          -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+          z-index: 2;
+          background: #ffffff;
+          cursor: pointer;
+      }
+
+      .side {
+          background: #3F4047;
+          -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+          z-index: 1;
+          left: 60px;
+          cursor: pointer;
+      }
+
+      p {
+          text-align: center;
+          font: 20px "Yanone Kaffeesatz";
+          margin-top: 0px;
+      }
+
+      .white p {
+          color: #d9d9d9;
+      }
+
+      #container-menu-icon {
+          width: 40px;
+          margin: auto;
+          height: 30px;
+          position: relative;
+          margin-top: 10px;
+          cursor: pointer;
+          -webkit-transition: all 0.5s ease-in-out;
+          -moz-transition: all 0.5s ease-in-out;
+          -ms-transition: all 0.5s ease-in-out;
+          -o-transition: all 0.5s ease-in-out;
+      }
+
+      .line1 {
+          width: 40px;
+          height: 0.7px;
+          background: #3F4047;
+          margin: auto;
+          right: 0;
+          margin-top: 4px;
+          position: absolute;
+          -webkit-transition: all 0.4s ease-in-out;
+          -moz-transition: all 0.4s ease-in-out;
+          -ms-transition: all 0.4s ease-in-out;
+          -o-transition: all 1s ease-in-out;
+      }
+
+      .line2 {
+          width: 40px;
+          height: 0.7px;
+          background: #3F4047;
+          margin: auto;
+          margin-top: 16px;
+          position: absolute;
+      }
+
+      .line3 {
+          width: 40px;
+          height: 0.7px;
+          background: #3F4047;
+          margin: auto;
+          right: 0;
+          margin-top: 28px;
+          position: absolute;
+          -webkit-transition: all 0.4s ease-in-out;
+          -moz-transition: all 0.4s ease-in-out;
+          -ms-transition: all 0.4s ease-in-out;
+          -o-transition: all 1s ease-in-out;
+      }
+
+      .linedown {
+          width: 20px;
+          right: 0;
+          margin-top: 11px;
+          margin-left: 1px;
+          -webkit-transform: rotateZ(25deg);
+          transform: rotateZ(25deg);
+      }
+
+
+
+      #container-menu-icon:hover .line1 {
+          width: 20px;
+          right: 0;
+          margin-top: 11px;
+          margin-left: 1px;
+          -webkit-transform: rotateZ(25deg);
+          transform: rotateZ(25deg);
+      }
+
+      .lineup {
+          width: 20px;
+          right: 0;
+          margin-top: 21px;
+          -webkit-transform: rotateZ(-25deg);
+          transform: rotateZ(-25deg);
+      }
+
+      #container-menu-icon:hover .line3 {
+          width: 20px;
+          right: 0;
+          margin-top: 21px;
+          -webkit-transform: rotateZ(-25deg);
+          transform: rotateZ(-25deg);
+      }
+
+      .iluese {
+          margin-top: 10px;
+          -webkit-animation: zoomy 0.5s ease-in-out;
+          transform: rotate( -180deg );
+          -webkit-transform: rotate( -180deg );
+      }
+
+      @-webkit-keyframes zoomy {
+          0% {
+              transform: scale(1);
+          }
+
+          50% {
+              transform: scale(0.5);
+          }
+
+          100% {
+              transform: scale(1);
+              transform: rotate( -180deg );
+              -webkit-transform: rotate( -180deg );
+          }
+      }
+
+      ul {
+          width: 100%;
+          height: auto;
+          text-decoration-style: none;
+          z-index: 1000;
+          position: relative;
+          background: #3F4047;
+      }
+
+          ul li {
+              width: 100%;
+              height: 80px;
+              cursor: pointer;
+              background: #3F4047;
+          }
+
+      #first {
+          background: #FFFFFF;
+          width: 100%;
+          height: 51px;
+      }
+
+      .box-scene-ul {
+          -webkit-perspective: 700;
+          perspective: 700;
+          width: 300px;
+          height: 180px;
+          margin: auto;
+          z-index: 999;
+      }
+
+          .box-scene-ul:hover .box-ul {
+              -webkit-transform: rotateX(-90deg);
+              transform: rotateX(-90deg);
+          }
+
+      .box-ul {
+          width: 300px;
+          height: 80px;
+          position: relative;
+          -webkit-transform-style: preserve-3d;
+          -webkit-transition: all 0.3s ease-out;
+          -webkit-transform-origin: 45px 45px -35px;
+          transform-origin: 45px 45px -35px;
+          transition: all 0.3s ease-out;
+          transform-style: preserve-3d;
+          margin-top: -18px;
+      }
+
+      .face-li {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          -webkit-backface-visibility: visible;
+          -webkit-transform: rotateX(180deg);
+          -webkit-transform-origin: 0 0;
+          transform: rotateX(180deg);
+          transform-origin: 0 0;
+          backface-visibility: visible;
+      }
+
+      .front-li {
+          background: #3F4047;
+          color: #fff;
+          z-index: 2;
+          -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+      }
+
+      .side-li {
+          background: #fff;
+          color: #3F4047;
+          z-index: 1;
+          left: 0px;
+          -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+      }
+
+      #context {
+          -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+      }
+
+      h1 {
+          font-weight: normal;
+          font: 30px "Yanone Kaffeesatz";
+          line-height: 80px;
+          text-align: center;
+      }
+
+      h3 {
+          font-weight: normal;
+          font: 30px "Yanone Kaffeesatz";
+          text-align: center;
+      }
+
+      #center {
+          width: 200px;
+          margin: auto;
+          position: relative;
+          top: -50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+      }
